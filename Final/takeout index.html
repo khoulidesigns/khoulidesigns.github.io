@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>takeout menu</title>
+	
+	<link rel="stylesheet" href="styles/takeout.css">
+	
+</head>
+
+<body>
+	
+	<ul>
+  <li><a class="active" href="indexhome.html">Home</a></li>
+  <li><a href="takeoutmenu.html">Takeout Menu</a></li>
+ 
+</ul>
+	
+	<h1 align="center">Takeout Order Form</h1>
+	
+	
+	
+	<form>
+		
+		
+	
+	  <label for="fname">Name:<br></label>
+		<input type="text"><br>
+		
+	  <label for="phone">Phone:<br></label>
+  <input type="tel" id="phone" name="phone" minlength="10" maxlength="15"><br>
+		
+		<label for="address">Address:<br></label>
+		<input type="text" id="address" name="address" maxlength="30">
+		<br>
+		
+		
+	  
+		
+		<table width="800" >
+		  <tbody>
+			  <tr>
+			  <td><label>Item</label></td>
+				  <td><label>Quantity</label></td>
+				  <td><label>Unit Price</label></td>
+				  <td><label>Calculate</label></td>
+				  <td><label>Total</label></td>
+			  </tr>
+		    <tr>
+		      <td><label>Cheese Pizza<br></label><img src="images/cheese.jpg" width="120" height="100" alt=""/></td>
+				
+		      <td>
+  <input type="number" id="qtycheese" name="quantity" min="1" max="1">
+				</td>
+				
+		      <td><input type="text" id="pricecheese" name="price" value="$19.99"></td>
+				
+				<td><button onClick="calculate()">Calculate</button>
+				</td>
+				
+				<td><input type="text" name="total" id="total" value="$19.99"></td>
+				
+	        </tr>
+		    <tr>
+				
+		      <td><label>Pepperoni<br></label><img src="images/pepperoni.jpg" width="120" height="100" alt=""/></td>
+				
+	<td>
+  <input type="number" id="qntypepper" name="quantity" min="1" max="1"></td>
+				
+		      <td><input type="text" id="pricepepper" name="price" value="$22.99"></td>
+				
+		      <td><button onClick="calculate()">Calculate</button>
+				</td>
+				
+				<td><input type="text" name="total" id="total2" value="$22.99"></td>
+	        </tr>
+		    <tr>
+				
+		      <td><label>Veggie Lovers<br></label><img src="images/veggie.jpg" width="120" height="100" alt=""/></td>
+				
+	<td>
+  <input type="number" id="qntyveggie" name="quantity" min="1" max="1"></td>
+				
+		      <td><input type="text" id="priceveggie" name="price" value="$21.99"></td>
+				
+		      <td><button onClick="calculate()">Calculate</button>
+				</td>
+				
+				<td><input type="text" name="total" id="total3" value="$21.99"></td>
+	        </tr>
+		    <tr>
+				<td><label>Meat Lovers <br></label><img src="images/meat lovers.jpg" width="120" height="100" alt=""/></td>
+				
+	<td>
+  <input type="number" id="qntymeat" name="quantity" min="1" max="1"></td>
+				
+		      <td><input type="text" id="pricemeat" name="price" value="$23.99"></td>
+				
+		      <td><button onClick="calculate()">Calculate</button>
+				</td>
+				
+				<td><input type="text" name="total" id="total4" value="$23.99"></td>
+	        </tr>
+			  <tr>
+		      <td><label>House Salad<br></label><img src="images/house salad.jpg" width="120" height="100" alt=""/></td>
+				  
+	<td>
+  <input type="number" id="qntyhouse" name="quantity" min="1" max="1"></td>
+				
+		      <td><input type="text" id="pricehouse" name="price" value="$9.00"></td>
+				
+		      <td><button onClick="calculate()">Calculate</button>
+				</td>
+				
+				<td><input type="text" name="total" id="total5" value="$9.00"></td>
+	        </tr>
+			  <tr>
+		      <td><label>Caesar Salad<br></label><img src="images/caesar salad.jpg" width="120" height="100" alt=""/></td>
+				  
+	<td>
+  <input type="number" id="qntycaesar" name="quantity" min="1" max="1"></td>
+				
+		      <td><input type="text" id="pricecaesar" name="price" value="$9.00"></td>
+				
+		      <td><button onClick="calculate()">Calculate</button>
+				</td>
+				
+				<td><input type="text" name="total" id="total6" value="$9.00"></td>
+	        </tr>
+			  <tr>
+		      <td><label>Greek<br></label><img src="images/greek salad.jpg" width="120" height="100" alt=""/></td>
+				  
+	<td>
+  <input type="number" id="qntygreek" name="quantity" min="1" max="1"></td>
+				
+		      <td><input type="text" id="pricegreek" name="price" value="$9.00"></td>
+				
+		      <td><button onClick="calculate()">Calculate</button>
+				</td>
+				
+				<td><input type="text" name="total" id="total7" value="$9.00"></td>
+	        </tr>
+			  <tr>
+		      <td><label>Antipasto<br></label><img src="images/antipasto salad.jpg" width="120" height="" alt=""/></td>
+				  
+	<td>
+  <input type="number" id="qntypasto" name="quantity" min="1" max="1"></td>
+				
+		      <td><input type="text" id="pricepasto" name="price" value="$9.00"></td>
+				
+		      <td><button onClick="calculate()">Calculate</button>
+				</td>
+				
+				<td><input type="text" name="total" id="total8" value="$9.00"></td>
+				  
+	        </tr>
+			  
+			  <tr>
+		      <td><label>Combo Box<br></label><img src="images/combo.png" width="120" height="100" alt=""/></td>
+				  
+	<td>
+  <input type="number" id="qntycombo" name="quantity" min="1" max="1"></td>
+				
+		      <td><input type="text" id="pricecombo" name="price" value="$12.00"></td>
+				
+		      <td><button onClick="calculate()">Calculate</button>
+				</td>
+				
+				<td><input type="text" name="total" id="total9" value="$12.00"></td>
+				  
+	        </tr>
+			  
+			  <tr>
+		      <td><label>Coke<br></label><img src="images/coke.jpg" width="100" height="" alt=""/></td>
+				  
+	<td>
+  <input type="number" id="qntycoke" name="quantity" min="1" max="1"></td>
+				
+		      <td><input type="text" id="pricecoke" name="price" value="$2.75"></td>
+				
+		      <td><button onClick="calculate()">Calculate</button>
+				</td>
+				
+				<td><input type="text" name="total" id="total10" value="$2.75"></td>
+	        </tr>
+			  <tr>
+		      <td><label>Diet Coke<br></label><img src="images/diet.jpg" width="120" height="" alt=""/></td>
+				  
+	<td>
+  <input type="number" id="qntydiet" name="quantity" min="1" max="1"></td>
+				
+		      <td><input type="text" id="pricediet" name="price" value="$2.75"></td>
+				
+		      <td><button onClick="calculate()">Calculate</button>
+				</td>
+				
+				<td><input type="text" name="total" id="total11" value="$2.75"></td>
+				  
+	        </tr>
+			  
+			  <tr>
+		      <td><label>Sprite<br></label><img src="images/sprite.jpg" width="120" height="" alt=""/></td>
+				  
+	<td>
+  <input type="number" id="qntysprite" name="quantity" min="1" max="1"></td>
+				
+		      <td><input type="text" id="pricesprite" name="price" value="$2.75"></td>
+				
+		      <td><button onClick="calculate()">Calculate</button>
+				</td>
+				
+				<td><input type="text" name="total" id="total12" value="$2.75"></td>
+				  
+	        </tr>
+			  
+			  <tr>
+		      <td><label>Fanta<br></label><img src="images/fanta.jpg" width="120" height="" alt=""/></td>
+				  
+	<td>
+  <input type="number" id="qntyfanta" name="quantity" min="1" max="1"></td>
+				
+		      <td><input type="text" id="pricefanta" name="price" value="$2.75"></td>
+				
+		      <td><button onClick="calculate()">Calculate</button>
+				</td>
+				
+				<td><input type="text" name="total" id="total13" value="$2.75"></td>
+				  
+	        </tr>
+			  
+			  
+			  
+			
+	      </tbody>
+			
+			
+			
+	  </table>
+		
+		
+		<input type="submit">
+		<input type="reset">
+	
+	
+	
+	</form>
+</body>
+</html>

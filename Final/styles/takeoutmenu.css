@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Merienda&display=swap');
+
+body{background-image: url("../images/chalkboard.jpg");
+	background-color: rgba(174,174,174,1.00);
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+table {font-family: 'Merienda', cursive;
+	color:white;
+  border: 1px solid black;
+	align-content: center;
+}
+
+h1{font-size:50px;
+color:white;
+font-family: 'Cabin Sketch', cursive;}
+
+h2{color: rgba(255,255,255,1.00);
+font-family: 'Cabin Sketch', cursive;
+font-size: 35px;}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}

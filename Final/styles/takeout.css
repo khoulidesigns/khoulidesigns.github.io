@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&family=Satisfy&display=swap');
+
+h1 {}
+
+body{background-color: rgba(123,123,123,1.00);
+	background-image: url("../images/black background.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 800px 300px;
+	background-blend-mode:lighten;}
+
+label {font-family: 'Rokkitt', serif;
+font-size: 20px}
+
+input[type=text], select, [type=tel] {
+	font-size: 16px;
+	font-family: 'Rokkitt', serif;
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit], [type=reset] {
+	font-family: 'Rokkitt', serif;
+	font-size: 20px;
+  width: 100%;
+  background-color:rgba(255,255,255,1.00);
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color:rgba(255,0,4,1.00)
+}
+
+input[type=submit]:hover {
+  background-color:rgba(255,0,4,1.00)
+}
+
+table{
+  border: 1px solid black;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
